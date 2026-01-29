@@ -4,12 +4,14 @@ and can be found with the `\\\\.\\VmCompute` path. Walking the object manager, i
 vmcompute.exe has several exports that are wrappers around IOCTL call routines using. A number of the exported functions end with a DeviceIoControl
 call into the kernel.
 
+```bash
 Follow along:
+
 Walking the Object manager to find running objects
 
 With the provided wor.exe in the Glyph framework, you can enumerate all kernel objects exposed to usermode by supplying the \Device path.
 
 wor.exe first param is the path you would like to search. Passing device should show VmCompute exposed.
-
+```
 
 
