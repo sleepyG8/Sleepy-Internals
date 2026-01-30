@@ -1,4 +1,7 @@
 This DLL exports quite a lot of intersting routines. I will focus on some of the main ones I thought stood out. 
 
 VmsIfIoctlSendIoctl - Routine that dispatches ioctls
+* This is a handler for sending ioctl calls to the VmCompute
+  object.
+
 GetInitStateRaw - Checking state of VM 
