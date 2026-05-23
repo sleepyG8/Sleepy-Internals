@@ -40,7 +40,7 @@ C0 70 7C FC FE 7F 00 00 00 00 00 00
 ```
 
 Entropy Checker Extention:
--------------------------------
+
 2.2016
 
 [+] Memory Protections: [PAGE_READONLY]
