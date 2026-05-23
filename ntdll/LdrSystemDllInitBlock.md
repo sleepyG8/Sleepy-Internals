@@ -1,14 +1,14 @@
 This ntdll export contains a pointer to a table. This table is used by the loader at startup. It includes randomization fields and cfg related fields.
 
 Debug>>!dump
+
 Which addr to get?
-00007FFEFC74A450
+
+00007FFEFC74A450    // Export address from ntdll
+
 How many bytes to read? (Press enter to read till end of function)
-296
-[!] Read Memory - Base: 00007FFEFC74A450
-[+] Chars:
-( + V | ` B w w p w P w 0 w 0 w w w w x ] . f   a   } @ q | q | @ p | p | 
-[+] Raw: 
+
+296                // size as defined by the first unsigned long in the struct
 
 << PS_SYSTEM_DLL_INIT_BLOCK struct >>
 ```bash
@@ -53,6 +53,7 @@ RE tip #2: The 2nd entry in the struct, SystemDllWowRelocation, is 0 on non wow6
 Heres the struct, I actually got this struct from ntDoc, this is the same as the kernel struct so I just used that:
 https://ntdoc.m417z.com/ldrsystemdllinitblock
 
+```bash
 typedef struct _PS_SYSTEM_DLL_INIT_BLOCK_V3
 {
     ULONG Size;
@@ -84,4 +85,4 @@ typedef struct _PS_SYSTEM_DLL_INIT_BLOCK_V3
     ULONG64 ScpArm64EcCfgCheckESFunction;
 } PS_SYSTEM_DLL_INIT_BLOCK_V3, *PPS_SYSTEM_DLL_INIT_BLOCK_V3,
     PS_SYSTEM_DLL_INIT_BLOCK, *PPS_SYSTEM_DLL_INIT_BLOCK;
-
+```
