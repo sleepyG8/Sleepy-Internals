@@ -9,6 +9,9 @@ How many bytes to read? (Press enter to read till end of function)
 [+] Chars:
 ( + V | ` B w w p w P w 0 w 0 w w w w x ] . f   a   } @ q | q | @ p | p | 
 [+] Raw: 
+
+<< PS_SYSTEM_DLL_INIT_BLOCK struct >>
+```bash
 28 01 00 00 00 00 00 00 00 00 E2 2B 
 00 00 00 00 00 00 56 7C FD 7F 00 00 
 60 42 0D 77 00 00 00 00 A0 B5 11 77 
@@ -20,7 +23,7 @@ How many bytes to read? (Press enter to read till end of function)
 00 00 00 00 00 00 00 00 00 00 00 00 
 00 00 00 00 00 00 00 00 00 00 00 00 
 00 00 00 00 00 00 00 00 00 00 00 00 
-00 00 00 00 00 00 00 00 00 00 00 00           << PS_SYSTEM_DLL_INIT_BLOCK struct
+00 00 00 00 00 00 00 00 00 00 00 00        
 00 00 00 00 00 00 00 00 78 5D 2E 66 
 00 00 00 00 10 00 00 00 00 01 00 00 
 00 00 00 00 00 00 00 10 01 20 00 00 
@@ -33,7 +36,8 @@ How many bytes to read? (Press enter to read till end of function)
 FE 7F 00 00 40 70 7C FC FE 7F 00 00 
 C0 70 7C FC FE 7F 00 00 00 00 00 00 
 00 00 00 00 00 00 00 00 00 00 00 00 
-00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00
+```
 
 Entropy Checker Extention:
 -------------------------------
