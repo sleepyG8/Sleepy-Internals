@@ -1,0 +1,8 @@
+KiSystemCall64 RVA: 0x4B2600
+
+KiSystemCall64 is the first function a syscall from usermode hits as soon as it passes the ring boundary, starting out the SSDT chain, ending in the dispatcher.
+
+RE tip: If you follow this chain, you will evnetually land on a rip relative load, that loads the SSDT address.
+
+
+
